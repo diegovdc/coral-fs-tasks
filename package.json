@@ -1,6 +1,6 @@
 {
   "name": "coral-fs-tasks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Modules that wraps a few functions of Node's 'fs' module inside Tasks (from folktale/data.task), for easy function composition (using, for example, Ramda's composeK) ",
   "main": "fs-tasks.js",
   "scripts": {
