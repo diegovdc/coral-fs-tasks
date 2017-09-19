@@ -36,6 +36,14 @@ const readToBuffer = path =>
 		)
 	})
 
+const readAsText = utf =>  path => 
+	new Task((reject, resolve) => {
+		return fs.readFile(path, utf, (err, data) => 
+			err ? reject(err) : resolve(data)
+		)
+	})
+
+
 // writeFile :: String dir_path -> {slug, buffer} -> Task err | fsWrite
 const writeFile =  writeFileWith(fs)
 
